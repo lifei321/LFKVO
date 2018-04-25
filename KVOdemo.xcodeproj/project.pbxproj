@@ -15,6 +15,8 @@
 		0B99248B208F41A600FD942D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B99248A208F41A600FD942D /* main.m */; };
 		0B992495208F41A600FD942D /* KVOdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B992494208F41A600FD942D /* KVOdemoTests.m */; };
 		0B9924A0208F41A600FD942D /* KVOdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B99249F208F41A600FD942D /* KVOdemoUITests.m */; };
+		0B9924B020901D4600FD942D /* LFObserverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9924AF20901D4600FD942D /* LFObserverModel.m */; };
+		0B9924B3209052EC00FD942D /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9924B2209052EC00FD942D /* NSObject+KVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0B99249B208F41A600FD942D /* KVOdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B99249F208F41A600FD942D /* KVOdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOdemoUITests.m; sourceTree = "<group>"; };
 		0B9924A1208F41A600FD942D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9924AE20901D4600FD942D /* LFObserverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFObserverModel.h; sourceTree = "<group>"; };
+		0B9924AF20901D4600FD942D /* LFObserverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFObserverModel.m; sourceTree = "<group>"; };
+		0B9924B1209052EC00FD942D /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		0B9924B2209052EC00FD942D /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		0B99247A208F41A600FD942D /* KVOdemo */ = {
 			isa = PBXGroup;
 			children = (
+				0B9924AD20901D1600FD942D /* KVO */,
 				0B99247B208F41A600FD942D /* AppDelegate.h */,
 				0B99247C208F41A600FD942D /* AppDelegate.m */,
 				0B99247E208F41A600FD942D /* ViewController.h */,
@@ -130,6 +137,17 @@
 				0B9924A1208F41A600FD942D /* Info.plist */,
 			);
 			path = KVOdemoUITests;
+			sourceTree = "<group>";
+		};
+		0B9924AD20901D1600FD942D /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				0B9924AE20901D4600FD942D /* LFObserverModel.h */,
+				0B9924AF20901D4600FD942D /* LFObserverModel.m */,
+				0B9924B1209052EC00FD942D /* NSObject+KVO.h */,
+				0B9924B2209052EC00FD942D /* NSObject+KVO.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +285,9 @@
 			files = (
 				0B992480208F41A600FD942D /* ViewController.m in Sources */,
 				0B99248B208F41A600FD942D /* main.m in Sources */,
+				0B9924B3209052EC00FD942D /* NSObject+KVO.m in Sources */,
 				0B99247D208F41A600FD942D /* AppDelegate.m in Sources */,
+				0B9924B020901D4600FD942D /* LFObserverModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
